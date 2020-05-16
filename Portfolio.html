@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background: #000000;
+        }
+        
+        #overlay { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .circle {
+            border-radius: 50%;
+        }
+        
+        .cir1 {
+            height: 200px;
+            width: 200px;
+            border: 35px solid;
+            border-radius: 50%;
+            border-bottom-color: #545454;
+            border-left-color: #545454;
+            border-top-color: #545454;
+            border-right-color: transparent;
+            animation: cir1 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir2 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 10px solid;
+            border-bottom-color: rgba(163, 163, 163, 0.688);
+            border-left-color: rgba(163, 163, 163, 0.688);
+            border-top-color: rgba(163, 163, 163, 0.688);
+            border-right-color: rgba(163, 163, 163, 0.688);
+            animation: cir2 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir3 {
+            height: 195px;
+            width: 195px;
+            border-radius: 50%;
+            border: 50px solid;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: rgba(163, 163, 163, 0.28);
+            animation: cir3 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir4 {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border: 13px solid;
+            border-bottom-color: rgba(109, 109, 109, 0.688);
+            border-left-color: rgba(109, 109, 109, 0.688);
+            border-top-color: rgba(109, 109, 109, 0.688);
+            border-right-color: rgba(109, 109, 109, 0.688);
+            animation: cir4 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir5 {
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            border: 5px solid;
+            border-bottom-color: transparent;
+            border-left-color: rgba(206, 206, 206, 0.688);
+            border-top-color: transparent;
+            border-right-color: transparent;
+            animation: cir5 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir6 {
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            border: 5px solid;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: rgba(206, 206, 206, 0.688);
+            animation: cir6 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir7 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 3px solid;
+            border-bottom-color: rgba(127, 127, 127, 0.688);
+            border-left-color: rgba(127, 127, 127, 0.688);
+            border-top-color: rgba(127, 127, 127, 0.688);
+            border-right-color: rgba(127, 127, 127, 0.688);
+            animation: cir7 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir8 {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 3px solid;
+            border-bottom-color: rgba(188, 9, 9, 1);
+            border-left-color: rgba(188, 9, 9, 1);
+            border-top-color: rgba(188, 9, 9, 1);
+            border-right-color: rgba(188, 9, 9, 1);
+            animation: cir8 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir9 {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 3px solid rgba(170, 170, 170, 1);
+            animation: cir9 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cir10 {
+            height: 1px;
+            width: 1px;
+            border-radius: 50%;
+            border: 5px solid rgba(170, 170, 170, 1);
+            animation: cir10 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        @keyframes cir1 {
+            0% {
+                transform: translate(-50%, -50%)rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%)rotate(-360deg);
+            }
+        }
+        
+        @keyframes cir3 {
+            0% {
+                transform: translate(-50%, -50%)rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%)rotate(360deg);
+            }
+        }
+        
+        @keyframes cir5 {
+            0% {
+                transform: translate(-50%, -50%)rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%)rotate(360deg);
+            }
+        }
+        
+        @keyframes cir6 {
+            0% {
+                transform: translate(-50%, -50%)rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%)rotate(360deg);
+            }
+        }
+        .line{
+            position: absolute;
+            top:50%;
+            left:39%;
+            transform: translate(-50%,-50%);
+            height: 1px;
+            width:300px;
+            background: #fff;
+        }
+        .clock {
+            position: absolute;
+            top: 50%;
+            left: 37%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #17D4FE;
+            font-size: 20px;
+            font-family: Century Gothic;
+            letter-spacing: 7px;
+        }
+        .circle2{
+            position:fixed;
+             top: 75%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+        .main2 {
+            position: absolute;
+           
+        }
+        .circ1 {
+            height: 200px;
+            width: 200px;
+            border: 5px solid;
+            border-radius: 50%;
+            border-bottom-color: #3dbcef;
+            border-left-color: #3dbcef;
+            border-top-color: #3dbcef;
+            border-right-color: transparent;
+            animation: circ1 2s linear infinite;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+
+        .circ2 {
+            height: 193px;
+            width: 193px;
+            border-radius: 50%;
+            border: 2px solid;
+            border-bottom-color: rgba( 123, 206, 238, 0.816 );
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            animation: circ2 2s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .circ3 {
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+            border: 3px solid;
+            border-bottom-color: rgba( 18, 138, 185, 0.816 );
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: rgba( 20, 152, 204, 0.816 );
+            animation: circ3 2s linear infinite;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        
+        .circ4 {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            border: 3px solid;
+            border-bottom-color: rgba( 45, 133, 235, 0.816 ) ;
+            border-left-color:transparent;
+            border-top-color: rgba( 45, 133, 235, 0.816 ) ;
+            border-right-color: rgba( 45, 133, 235, 0.816 );
+            animation: circ4 1.6s linear infinite;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%) rotate(60deg);
+        }
+        
+        .circ5 {
+            height: 166px;
+            width: 166px;
+            border-radius: 50%;
+            border: 5px solid;
+            border-bottom-color: transparent;
+            border-left-color: #15f4ee;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            animation: circ5 1s linear infinite;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        
+        .circ6 {
+            height: 166px;
+            width: 166px;
+            border-radius: 50%;
+            border: 5px solid;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: #15f4ee;
+            animation: circ6 1s linear infinite;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        @keyframes circ1{
+            0%{
+                transform: translate(-50%,-50%)rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%,-50%)rotate(-360deg);
+            }
+        }
+        @keyframes circ2{
+            0%{
+                transform: translate(-50%,-50%)rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%,-50%)rotate(360deg);
+            }
+        }
+        @keyframes circ3{
+            0%{
+                transform: translate(-50%,-50%)rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%,-50%)rotate(-360deg);
+            }
+        }
+        @keyframes circ4{
+            0%{
+                transform: translate(-50%,-50%)rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%,-50%)rotate(360deg);
+            }
+        }
+        @keyframes circ5{
+            0%{
+                transform: translate(-50%,-50%)rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%,-50%)rotate(360deg);
+            }
+        }
+        @keyframes circ6{
+            0%{
+                transform: translate(-50%,-50%)rotate(0deg);
+            }
+            100%{
+                transform:translate(-50%,-50%)rotate(360deg);
+            }
+        }
+        #wrapper {
+            position: fixed;
+            margin-top: -30px;
+            margin-left:-45px;
+            animation: pulse 1s infinite; 
+        }
+        #pulsingheart {
+            position: relative;
+            width: 110px;
+            height: 90px;
+        }
+        #pulsingheart:before,
+        #pulsingheart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #7bb8e4;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+            animation: pulsecolor 1s infinite;
+        }
+        #pulsingheart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            animation: pulsecolor 1s infinite;
+        }
+        @keyframes pulse {
+            10% {
+                transform: scale(1.2)
+            }
+        }
+        @keyframes pulsecolor {
+            10% {
+                background:#15f4ee ;
+            }
+        }
+        a{
+           text-decoration:none;
+           color:white;
+           font-display: optional;
+           font-family: airy;
+           padding:10px 20px;
+           border: 1px solid white;
+           border-radius: 20px;
+       }
+   </style>
+</head>
+
+<body>
+    <div id="overlay">
+        <div class="main">
+            <div class="cir1 circle"></div>
+            <div class="cir2 circle"></div>
+            <div class="cir3 circle"></div>
+            <div class="cir4 circle"></div>
+            <div class="cir5 circle"></div>
+            <div class="cir6 circle"></div>
+            <div class="cir7 circle"></div>
+            <div class="cir8 circle"></div>
+            <div class="cir9 circle"></div>
+            <div class="cir10 circle"></div>
+        </div>
+    </div>
+    <div class="line">
+     <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+     <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+        }
+
+        showTime();
+    </script>
+</div>
+<div class="circle2">
+ <div class="main2">
+    <div class="circ1 circle"></div>
+    <div class="circ2 circle"></div>
+    <div class="circ3 circle"></div>
+    <div class="circ4 circle"></div>
+    <div class="circ5 circle"></div>
+    <div class="circ6 circle"></div>
+    <div id="wrapper">
+        <div id="pulsingheart"></div>
+    </div>
+</div>
+</div>
+</body>
+</html>
