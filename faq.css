@@ -1,0 +1,105 @@
+body{
+    background:url("query.jpg");
+    background-position:center;
+    background-size: cover;
+}
+ul{
+    margin-top: -10px;
+    list-style-type: none;
+    float:right;
+}
+ul li{
+    display:inline-block;
+    font-family: airy;
+    padding: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+a img{
+    margin-top: 10px;
+    height:40px;
+    width: 40px;
+}
+img{
+    height: 30px;
+    width:30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.qwe{
+    position: absolute;
+    top:95%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.qwe img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.qwe h1{
+    text-align: center;
+    font-family: century gothic;
+    font-size: 20px;
+    margin-top: -50px;
+    color:#e5e5e5;
+}
+form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: century gothic;
+    font-size: 30px;
+    color: #e5e5e5;
+}
+input[type="text"],[type="email"]{
+    height: 40px;
+    width: 600px;
+    background: none;
+    border:2px solid steelblue;
+    border-radius: 5px;
+    font-family: cronus round;
+    font-size: 30px;
+    color: aqua;
+    
+}
+textarea{
+    height: 150px;
+    width: 600px;
+    background: none;
+    border:2px solid steelblue;
+    border-radius: 5px;
+    font-family: cronus round;
+    font-size: 30px;
+    color: aqua;
+}
+input[placholder]{
+    text-align: center;
+}
+input[type="submit"]{
+   height: 40px;
+    width: 600px;
+    border-radius: 5px;
+    background: none;
+    border:2px solid steelblue;
+    margin-top: 20px;
+    font-family: cocobiker;
+    font-size: 30px;
+    color:#e5e5e5;
+}
+
+
+
+
+
+
+
+
+
+

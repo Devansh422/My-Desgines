@@ -1,0 +1,73 @@
+body{
+    background-image:url("2493_hd-wallpapers-for-android.jpg");
+    background-position:center;
+    background-size: cover;
+}
+ul{
+    margin-top: -10px;
+    list-style-type: none;
+    float:right;
+}
+ul li{
+    display:inline-block;
+    font-family: airy;
+    padding: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+a img{
+    margin-top: 10px;
+    height:40px;
+    width: 40px;
+}
+h1{
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+   font-family: cocobiker;
+    color: azure;
+}
+h2{
+   position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: -138px;
+   font-family: cocobiker;
+    color: azure;
+}
+h3{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+   font-family: cocobiker;
+    color: azure;
+}
+.qwe{
+    position: absolute;
+    top:95%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.qwe img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.qwe h1{
+    text-align: center;
+    font-family: century gothic;
+    font-size: 20px;
+    margin-top: -50px;
+}
+
+
+

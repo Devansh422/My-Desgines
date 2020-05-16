@@ -1,0 +1,89 @@
+body{
+    background-image: url("login.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.form{
+    height:450px;
+    width:300px;
+    background:#1e1a1a;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform:translate(170%,25%);
+}
+
+.form .iop input[type="text"],[type="password"]:hover{
+    text-decoration-color:aliceblue;
+}
+.logo{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    position:absolute;
+    transform:translate(100%,-50%);
+}
+h1{
+    color:aliceblue;
+    transform: translate(11%,60%);
+    font-family: CocoBikeR;
+    font-size: 50px;
+}
+.iop{
+    padding: 10px 30px;
+}
+.iop p{
+    color:aliceblue;
+    text-align: center;
+    font-size: 20;
+    font-family: Cronus Round;
+}
+.iop input{
+    width:100%;
+    margin-bottom:10px;
+}
+.iop input[type="text"],[type="password"]{
+     border:none;
+    border-bottom: 2px solid white;
+    border-radius:25px;
+    background: transparent;
+    outline:none;
+    height:25px;
+    font-size: 15px;
+    color:black;
+}
+.iop input[placeholder]{
+    color:white;
+    font-family: Banana Yeti;
+    font-size: 25;
+    text-align: center;
+}
+.iop input[type="submit"]{
+    border:none;
+    outline:none;
+    background:red;
+    color:white;
+    height:50px;
+    margin-top: 20px;
+    font-family:cocobiker;
+    font-size: 30px;
+    border-radius: 25px;
+}
+.asd img{
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+    margin-top: -500px;
+    margin-left: 780px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
